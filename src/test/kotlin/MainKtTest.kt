@@ -122,28 +122,29 @@ class WallServiceTest {
         assertFalse(result)
     }
 
-    @Test
-    fun createdComment() {
+    @Test(expected = PostNotFoundException::class)
+    fun shouldThrow() {
         WallService.createComment(
-            1,
+            1000,
             comment = Comment(
-                0,
+                1,
                 true,
                 true,
                 "cool"
             )
         )
-        val result = (WallService.createComment(
-            0,
+    }
+
+    @Test(expected = PostNotFoundException::class)
+    fun shouldNotThrow() {
+        WallService.createComment(
+            1,
             comment = Comment(
-                0,
+                1,
                 true,
                 true,
-                "cool",
+                "cool"
             )
         )
-                )
-
-        assertEquals(0, result)
     }
 }
