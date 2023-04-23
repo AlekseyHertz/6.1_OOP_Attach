@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WallServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-20T10:12:40" hostname="MacBook-Air-Aleksey.local" time="0.334">
+<testsuite name="WallServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-23T07:57:18" hostname="MacBook-Air-Aleksey.local" time="0.326">
   <properties/>
-  <testcase name="upDateIsFalse" classname="WallServiceTest" time="0.33"/>
-  <testcase name="addPosts" classname="WallServiceTest" time="0.0"/>
-  <testcase name="shouldThrow" classname="WallServiceTest" time="0.001"/>
-  <testcase name="shouldNotThrow" classname="WallServiceTest" time="0.001"/>
-  <testcase name="upDateIsTrue" classname="WallServiceTest" time="0.001"/>
+  <testcase name="shouldNotThrow" classname="WallServiceTest" time="0.326"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

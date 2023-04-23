@@ -135,12 +135,12 @@ class WallServiceTest {
         )
     }
 
-    @Test(expected = PostNotFoundException::class)
+    @Test
     fun shouldNotThrow() {
         WallService.createComment(
-            1,
+            0,
             comment = Comment(
-                1,
+                0,
                 true,
                 true,
                 "cool"
